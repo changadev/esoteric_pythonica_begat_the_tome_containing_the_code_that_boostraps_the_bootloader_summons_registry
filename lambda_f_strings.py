@@ -11,9 +11,10 @@ a.sort(key=lambda x:x[1])
 
 #code I am stuck with right now:
 def computepay(h, r):
-    return print(f'{(lambda x: (h-40.0)*r*1.5 + (40*r))}') 
+    return print(f'({lambda x:(h-40.0)*r*1.5 + (40*r)})')
 #I cannot figure out why this instances an object instead of doing a f-string print statement
+#-30 minutes later I pushed an update which I have not tested yet but which I am hopeful about
 
 #I've spent so long bashing (heh) my brain against interactive shell that I can no longer even extract the functionality I want from the lambda function itself
 def computepay(h, r):
-    return lambda x: (h-40.0)*r*1.5 + (40*r)
+    return lambda x:(h-40.0)*r*1.5 + (40*r)
