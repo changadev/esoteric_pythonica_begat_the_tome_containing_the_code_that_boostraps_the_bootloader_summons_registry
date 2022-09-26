@@ -2,7 +2,7 @@
 #a = [(1,2),(2,5),(3,1),(4,15)] #some example tuples to disect with function or lambda
 #def second(x):
     #return x[1]
-''''returns the second element of tuple/list x provided to the func''''
+''''returns the second element of tuple/list x provided to the func'''
 '''the above function reaches into tuples for the second element to then iterate through and sort'''
 #a.sort(key=second)
 #better, lambda way as follows:
@@ -19,7 +19,7 @@
     #return lambda x: (h-40.0)*r*1.5 + (40*r)
 
 #edit: i need to study how lambdas and advanced expressions work with return other than my current understanding of 
-#a fruitful functions parameters being an alias for the arguments being passed into it. And so here is the kiddy version of this script:
+#a fruitful functions parameters being an alias for the arguments being passed into it. And so here is the kiddy version of this script
 def computepay(h, r):
     '''returns residual value of gross pay (ot + normal time)'''
     if h > 40:
